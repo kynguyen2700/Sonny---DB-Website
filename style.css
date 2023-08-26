@@ -82,14 +82,9 @@ a{
 .sonny__gscale{
     position: relative;
     display: inline-block;
-    width: 500px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: 0;
-    padding-right: 50px;
-    margin-top: 50px;
     z-index: 0;
     float: right;
+    
 }
 
 
@@ -97,8 +92,10 @@ a{
     filter: grayscale(100%);
     opacity: 0.1;
     background-color: transparent;
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 1000px;
+    padding-bottom: 100px;
+    padding-left: 100px;
 }
 
 .sonny__icon{
@@ -198,10 +195,10 @@ a{
     color: #fff;
     max-width: 360px;
     background-color: transparent;
-    margin-top: 600px;
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
+    z-index: 1;
 }
 
 /* mobile menu stuff */
