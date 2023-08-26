@@ -3,17 +3,32 @@
     font-family: 'Catamaran', sans-serif;
 }
 
-body{
-    background-color: #282b30;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-}
-
 header{
     background-color: #282b30;
     padding-top: 20px;
 }
+
+body{
+    background-color: #282b30;
+    dispaly: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 90vh;
+    position: relative;
+    max-width: 1200px;
+}
+
+/* footer{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-width: 360px;
+    background-color: transparent;
+    margin-top: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+} */
+
 
 li{
     list-style: none;
@@ -22,6 +37,11 @@ li{
 a{
     color: white;
     text-decoration: none;
+}
+
+.nav-title{
+    font-size: 2rem;
+    padding-left: 25px;
 }
 
 .navbar{
@@ -44,11 +64,6 @@ a{
     padding-right: 25px;
 }
 
-.nav-title{
-    font-size: 2rem;
-    padding-left: 25px;
-}
-
 .nav-item{
     background-color: transparent;
 }
@@ -62,15 +77,28 @@ a{
     color: #7289da;
 }
 
-.bg{
-    display: flex;
-    background-color: transparent;
+/* home section */
+
+.sonny__gscale{
     position: relative;
-    left: 570px;
-    top: -300px;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 50px;
+    margin-top: 50px;
+    z-index: 0;
+    float: right;
+}
+
+
+.bg{
     filter: grayscale(100%);
     opacity: 0.1;
-    z-index: 0;
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
 }
 
 .sonny__icon{
@@ -82,20 +110,6 @@ a{
     margin-right: 10px;
 }
 
-footer{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    color: #fff;
-    max-width: 280px;
-    position: relative;
-    background-color: transparent;
-    margin-top: auto;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
 #home{
     font-size: 60px;
     background-color: inherit;
@@ -103,21 +117,16 @@ footer{
 
 .main__info{
     color: #fff;
-    display: block;
-    position: relative;
-    justify-content: left;
-    align-items: center;
+    display: inline-block;
+    position: absolute;
     background-color: transparent;
-    height: 20vh;
-    width: 20%;
-    top: 30px;
-    right: 22em;
-    float: left;
-    margin: 0 auto;
-    z-index: 1;
+    width: 35%;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 0;
+    z-index: 2;
+    padding-left: 30px;
 }
-
-
 
 .bio__name{
     font-size: 5rem;
@@ -126,10 +135,6 @@ footer{
 
 .bio__info{
     margin-top: 0;
-}
-
-.main__bio{
-    background-color: transparent;
 }
 
 .btn-group{
@@ -187,7 +192,17 @@ footer{
     font-size: 17px;
 }
 
-
+#main__footer{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-width: 360px;
+    background-color: transparent;
+    margin-top: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
 
 /* mobile menu stuff */
 .hamburger{
@@ -223,6 +238,8 @@ footer{
         flex-direction: column;
         background-color: #1e2124;
         width: 100%;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         transition: 0.3s;
         z-index: 10;
@@ -238,24 +255,14 @@ footer{
     }
 }
 
-.command__info{
-    color: #fff;
-    display: block;
-    position: relative;
-    justify-content: left;
-    align-items: center;
-    background-color: transparent;
-    height: 20vh;
-    width: 20%;
-    top: 50px;
-    right: 23.8em;
-    float: left;
-    margin: 0 auto;
-    z-index: 1;
-}
-
+/* command section */
 .command__left{
     display: block;
+    margin-left: 50px;
+}
+
+.command__info{
+    color: #fff;
 }
 
 .command__title{
@@ -271,12 +278,8 @@ footer{
 
 .command__right{
     display: block;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -92px;
-    left: 23rem;
-    width: 780px;
+    margin-left: 50px;
+
 }
 
 .command__header{
@@ -287,6 +290,9 @@ footer{
 .command__section{
     background-color: #33373b;
     position: relative;
+    max-width: 97%;
+    margin-right: 50px;
+    padding-right: 50px
 }
 
 .command__block{
@@ -340,29 +346,51 @@ footer{
     max-width: 170px;
 }
 
+#command__footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 273px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* about section */
+
 .about__info{
     color: #fff;
-    display: block;
-    position: relative;
-    justify-content: left;
-    align-items: center;
+    display: inline-block;
+    position: absolute;
     background-color: transparent;
     height: 20vh;
-    width: 20%;
-    top: 20px;
-    right: 23.8em;
-    float: left;
-    margin: 0 auto;
+    width: 35%;
+    margin-left: 30px;
     z-index: 1;
 }
 
 .bg__about{
-    display: block;
+    display: inline-block;
     position: relative;
-    justify-content: left;
     align-items: center;
-    left: 63em;
-    top: -100px
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-top: 70px;
+    z-index: 0;
+}
+
+#about__footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 650px;
+    margin-left: auto; 
+    margin-right: auto;
+    
 }
 
 
